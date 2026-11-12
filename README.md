@@ -7,6 +7,7 @@
 | 技能 | 用途 | 类型 |
 | --- | --- | --- |
 | [brand-icon-collector](skills/brand-icon-collector/) | 批量收集品牌/产品官方图标（logo），导出 SVG + 512px PNG，按模态/厂商排一览图与矩阵 | 自创 · MIT |
+| [multi-search-engine](skills/multi-search-engine/) | 16 引擎（7 国内 + 9 国际）搜索模板与反爬 Cookie 流程，无需 API Key | 收集（[ClawHub](https://clawhub.ai)，MIT） |
 | [session-temp-cleanup](skills/session-temp-cleanup/) | 会话/任务收尾时的临时文件与中间产物清理，含回收站空间释放诊断 | 自创 |
 | [pexels-image-downloader](skills/pexels-image-downloader/) | Pexels API 搜索下载高质量免费图片，自动调整尺寸与格式验证 | 收集（[openclaw/skills](https://github.com/openclaw/skills)） |
 | [chinese-literature](skills/chinese-literature/) | 中文文献检索与采集（CNKI 注入搜索 / RSS 顶刊监控 / NCPSSD 开放获取） | 收集（[MartyYao/Chinese-Literature-Skill](https://github.com/MartyYao/Chinese-Literature-Skill)，MIT，含本地审计记录） |

@@ -100,7 +100,7 @@ grep -o -i '<link[^>]*rel="[^"]*icon[^"]*"[^>]*>' page.html
 
 ## 源外搜索（三源 probe 全失败时的升级路径）
 
-用 `iconkit.py search-hints --slugs <品牌>` 生成查询链接，配合 `multi-search-engine` 技能的引擎模板与反爬流程执行。
+用 `iconkit.py search-hints --slugs <品牌>` 生成查询链接，配合 `multi-search-engine` 技能的引擎模板与反爬流程执行（获取地址见 SKILL.md 参考；未安装时按下表引擎要点手工执行）。
 
 **实测网络要点（2026-11）**
 

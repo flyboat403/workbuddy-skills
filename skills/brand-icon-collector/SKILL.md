@@ -91,7 +91,7 @@ python scripts/iconkit.py fetch --brands brands.json --out ./品牌图标
 python scripts/iconkit.py search-hints --slugs wan,seedream --zh "通义万相,Seedream"
 ```
 
-执行搜索用 **multi-search-engine** 技能（同在本机 skills 目录）的引擎模板与反爬流程，本技能不重复实现。几条实测要点：
+执行搜索建议配合 **multi-search-engine** 技能（16 引擎模板与反爬 Cookie 流程，MIT，软依赖——未安装时按下方实测要点与 `references/sources.md` 手工执行即可）。获取地址：本合集 `skills/multi-search-engine/`（https://github.com/flyboat403/workbuddy-skills），或 SkillHub `skillhub install multi-search-engine --namespace zcwl`。几条实测要点：
 
 - **百度必须先取会话**：先 `GET https://www.baidu.com/` 拿 Cookie，再带 Cookie 搜，否则返回 1.5KB 的反爬空壳页
 - **搜狗微信可直连**：`https://wx.sogou.com/weixin?type=2&query={关键词}`——国产产品的发布稿、品牌介绍多在微信公众号，这是找中文品牌官方色值与标识形态最有效的入口
@@ -192,4 +192,4 @@ README 里固定写入：单色版来自 LobeHub Icons（MIT）、彩色版来�
 - `references/sources.md` —— 源地址、slug 对照表、已确认无矢量源的品牌、favicon 兜底写法、源外搜索的第三方矢量站清单、官网内联 SVG 提取要点
 - `references/layouts.md` —— 一览图与总览页的完整参数、卡片结构、HTML 风格骨架
 - `scripts/extract_inline_svg.py` —— 官网内联 SVG 提取（扫描打分 → 三色派生 → 预览 → manifest）
-- 配套技能 `multi-search-engine` —— 16 引擎搜索模板与反爬 Cookie 流程，本技能第 3 步的"源外搜索"直接复用它，不重复实现
+- 配套技能 `multi-search-engine`（16 引擎搜索模板与反爬 Cookie 流程，MIT，**软依赖**）—— 本技能第 3 步"源外搜索"的推荐搭配。获取：https://github.com/flyboat403/workbuddy-skills/tree/main/skills/multi-search-engine ，或 SkillHub `skillhub install multi-search-engine --namespace zcwl`；未安装时按 `references/sources.md` 的引擎要点手工执行即可
