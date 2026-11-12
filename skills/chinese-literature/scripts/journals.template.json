@@ -1,0 +1,35 @@
+{
+  "// 说明": "本文件是 CNKI RSS 采集工具的期刊配置文件。",
+  "// 修改方法": "删除不需要的期刊条目，或添加你关注领域的 CNKI 期刊代码。",
+  "// 如何查找 CNKI 期刊代码": "1. 打开 https://navi.cnki.net/knavi/ → 搜索期刊名 → 进入详情页 → URL 末尾的 4 位字母代码就是 CNKI_CODE。",
+  "// 例外 URL": "某些期刊（如中国社会科学 ZSHK）使用不同的 RSS 地址，需在 EXCEPTION_URLS 中单独配置。",
+
+  "journals": {
+    "JJYJ": "经济研究",
+    "GLSJ": "管理世界",
+    "KJYJ": "会计研究",
+    "JRYJ": "金融研究",
+    "GGYY": "中国工业经济",
+    "SJJJ": "世界经济",
+    "JJXU": "经济学(季刊)",
+    "JCYJ": "管理科学学报",
+    "LKGP": "南开管理评论",
+    "GGGL": "公共管理学报",
+    "ZXGL": "中国行政管理",
+    "JJGL": "经济管理"
+  },
+
+  "// 学科分组参考": "按学科分组推荐配置，方便选择你关注的领域。",
+
+  "groups": {
+    "经济学": ["JJYJ", "SJJJ", "JJXU", "GGYY", "JCYJ"],
+    "管理学": ["GLSJ", "LKGP", "GGGL", "ZXGL"],
+    "会计与金融": ["KJYJ", "JRYJ"],
+    "综合社科": ["ZSHK", "JJGL"]
+  },
+
+  "// 例外 RSS URL": "少数期刊使用不同于标准的 RSS 地址，在此配置。",
+  "exception_urls": {
+    "ZSHK": "https://rss.cnki.net/knavi/rss/ZSHK?pcode=CJFD,CCJD"
+  }
+}
